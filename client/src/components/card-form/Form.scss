@@ -1,0 +1,20 @@
+.cards-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+
+    width: 50%;
+
+    font-size: 14px;
+    color: #2A3D65;
+
+    p {
+      padding: 18px 16px 12px;
+    }
+  }
+}

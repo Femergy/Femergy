@@ -1,0 +1,38 @@
+.total-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 15px;
+  border-radius: 10px;
+  border-top: 6px solid #44CCB5;
+
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 #E1E3ED;
+
+  .total-balance__title {
+    margin-bottom: 10px;
+
+    font-size: 23px;
+    color: #253962;
+  }
+
+  .total-balance__cash--wrapper {
+    text-align: right;
+
+    .total-balance__fem-value {
+      font-size: 31px;
+      color: #7297FF;
+    }
+  
+    .total-balance__usd-value {
+      font-size: 14px;
+      color: #253962;
+    }
+  
+    .total-balance__cash-name {
+      font-size: 12px;
+      color: #9DA6BF;
+    }
+  }
+}

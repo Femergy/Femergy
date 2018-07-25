@@ -1,0 +1,15 @@
+.idea
+node_modules
+**/*.log
+.DS_Store
+.vscode
+/.vs/ProjectSettings.json
+/.vs/config/applicationhost.config
+/.vs/slnx.sqlite
+/.vs/we-doo/v15/.suo
+**/*.iml
+/client/configDev.json
+/client/configProd.json
+/server/public/uploads/*
+.env
+public

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #40c967;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="ic_medium" transform="translate(16124 -11029)">
+    <g id="button_copy" data-name="button copy" transform="translate(-16124 11029)">
+      <rect id="button_bg" data-name="button bg" class="cls-1" width="36" height="36" rx="18"/>
+    </g>
+    <path id="medium_2_" data-name="medium (2)" class="cls-2" d="M791.236,780.278l-3.966,6.249,3.848,6.011,6.072-9.521Zm-13.143,12.774,5.872,2.7V783.1l-5.872-2.7Zm6.743-3.067,5.138,2.365-5.139-8.029v5.665Zm6.9,3.176,5.636,2.592V784.324Z" transform="translate(-16894.094 10258.722)"/>
+  </g>
+</svg>

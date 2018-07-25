@@ -1,0 +1,31 @@
+{
+  "api": {
+    "formSignin": "/api/auth/login",
+    "formSignup": "/api/auth/register",
+    "forgotPassword": "/api/auth/forgot",
+    "facebookLogin": "/api/auth/login/facebook",
+    "googleLogin": "/api/auth/login/google",
+    "twitterLogin": "/api/auth/login/twitter",
+    "linkedinLogin": "/api/auth/login/linkedin",
+    "updateUser": "/api/user",
+    "updateUserPhoto": "/api/user/photo",
+    "setAsReferal": "/api/auth/referer",
+    "getBonuses": "api/user/bonuses",
+    "verifyEmail": "/api/auth/verify",
+    "password": "/api/user/password",
+    "uploaded": "/uploads",
+    "post": "/api/post",
+    "authorPosts": "/api/post/author"
+  },
+  "social": {
+    "google": {
+      "clientId": "1093846685914-2raiu1nigku7nha2o1ndnmkc0b884sd9.apps.googleusercontent.com"
+    },
+    "facebook": {
+      "appId": "1820664797983699"
+    },
+    "linkedin": {
+      "clientId": "788qlflw77pqu1"
+    }
+  }
+}

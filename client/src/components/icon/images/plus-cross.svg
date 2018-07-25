@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.738 7.739">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #44ccb5;
+      }
+    </style>
+  </defs>
+  <path id="plus-cross" class="cls-1" d="M10.472,5.551,9.921,5,7.736,7.185,5.551,5,5,5.551,7.185,7.736,5,9.921l.551.551L7.736,8.287l2.185,2.185.551-.551L8.287,7.736Z" transform="translate(3.869 -7.072) rotate(45)"/>
+</svg>

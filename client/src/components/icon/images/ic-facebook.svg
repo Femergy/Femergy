@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-19126.225 10371.3 23.375 23.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b5998;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ic-facebook" transform="translate(-19126.225 10371.3)">
+    <g id="button_copy" data-name="button copy" transform="translate(0 0)">
+      <rect id="button_bg" data-name="button bg" class="cls-1" width="23.375" height="23.4" rx="11.687"/>
+    </g>
+    <path id="Imported_Layers_Copy" data-name="Imported Layers Copy" class="cls-2" d="M9.949,0H.581A.581.581,0,0,0,0,.581V9.949a.581.581,0,0,0,.581.581H5.624V6.452H4.252V4.863H5.624V3.691a1.915,1.915,0,0,1,2.044-2.1,11.261,11.261,0,0,1,1.226.063V3.074H8.053c-.66,0-.788.314-.788.774V4.863H8.839l-.2,1.589H7.266V10.53H9.949a.581.581,0,0,0,.581-.581V.581A.581.581,0,0,0,9.949,0" transform="translate(6.435 6.435)"/>
+  </g>
+</svg>

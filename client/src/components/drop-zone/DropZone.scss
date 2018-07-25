@@ -1,0 +1,30 @@
+.drop-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 360px;
+  height: 150px;
+  border: 1px dashed #CECEDB;
+  border-radius: 5px;
+
+  .drop-zone__cloud {
+    margin-bottom: 15px;
+    max-width: 33px;
+  }
+
+  .drop-zone__text {
+    max-width: 150px;
+
+    text-align: center;
+    font-size: 16px;
+    color: #395174;
+    line-height: 1.5;
+  }
+
+  .marked-underlined {
+    color: #7297FF;
+    text-decoration: underline;
+  }
+}

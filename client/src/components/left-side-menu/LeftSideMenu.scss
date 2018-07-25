@@ -1,0 +1,19 @@
+.left-side-menu {
+  position: fixed;
+
+  .left-side-menu__other {
+    display: flex;
+    font-size: 13px;
+  
+    a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #B9B9D1;
+    }
+  }
+
+  & > * {
+    margin-top: 25px;
+  }
+}

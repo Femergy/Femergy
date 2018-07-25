@@ -1,0 +1,26 @@
+.groups-list__card {
+  padding: 18px 0 0 17px;
+  
+  & > * {
+    margin-bottom: 15px;
+  }
+}
+
+.groups-list__title {
+  font-size: 14px;
+  color: #9DA6BF;
+  font-weight: normal;
+}
+
+.groups-list__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > *:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  & > * {
+    margin-bottom: 17px;
+  }
+}

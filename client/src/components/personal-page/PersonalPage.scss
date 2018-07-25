@@ -1,0 +1,13 @@
+.page-front {
+  min-height: 100vh;
+  padding-top: 50px;
+
+  background-color: #F0F1FC;
+
+  .page-front__content {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

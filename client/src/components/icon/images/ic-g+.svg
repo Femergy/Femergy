@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-18644 10527 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dc4e41;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ic-g_" data-name="ic-g+" transform="translate(-19156.807 9809.7)">
+    <g id="button_copy" data-name="button copy" transform="translate(512.807 717.3)">
+      <rect id="button_bg" data-name="button bg" class="cls-1" width="36" height="36" rx="18"/>
+    </g>
+    <g id="Group_187" data-name="Group 187" transform="translate(520.685 728.37)">
+      <path id="Shape" class="cls-2" d="M6.937,5.939V8.315h3.934A3.745,3.745,0,0,1,6.937,11.3a4.376,4.376,0,0,1,0-8.751A3.906,3.906,0,0,1,9.7,3.623l1.883-1.812A6.654,6.654,0,0,0,6.937,0a6.929,6.929,0,1,0,0,13.859A6.4,6.4,0,0,0,13.6,7.088a6.367,6.367,0,0,0-.109-1.148Z" transform="translate(0)"/>
+      <path id="Shape_Copy" data-name="Shape Copy" class="cls-2" d="M5.946,1.98H3.964V0H1.982V1.98H0V3.96H1.982v1.98H3.964V3.96H5.946" transform="translate(15.856 3.96)"/>
+    </g>
+  </g>
+</svg>

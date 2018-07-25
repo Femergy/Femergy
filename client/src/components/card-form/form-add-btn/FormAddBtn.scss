@@ -1,0 +1,18 @@
+.form-add-btn {
+  border-radius: 20px;
+  border: 1px solid #44CCB5;
+  padding: 6px 23px 6px 35px;
+  margin-top: 32px;
+
+  background-color: transparent;
+  background-image: url(../../../../public/images/plus-cross.svg);
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-position: 16px center;
+  box-shadow: 0 2px 6px 0 #b2d7FF;
+
+  color: #44CCB5;
+  font-size: 11px;
+
+  cursor: pointer;
+}

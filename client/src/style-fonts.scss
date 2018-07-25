@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'SFDmedium';
+  src: 
+    local('SFUIDisplay-Medium'),
+    local('SFDmedium'),
+    url('../public/fonts/SFUIDisplay-Medium.woff') format('woff'),
+    url('../public/fonts/SFUIDisplay-Medium.ttf') format('ttf'),
+    url('../public/fonts/SFUIDisplay-Medium.eot') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFDregular';
+  src: 
+    local('SFUIDisplay-Regular'),
+    local('SFDmedium'),
+    url('../public/fonts/SFUIDisplay-Regular.woff') format('woff'),
+    url('../public/fonts/SFUIDisplay-Regular.ttf') format('ttf'),
+    url('../public/fonts/SFUIDisplay-Regular.eot') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

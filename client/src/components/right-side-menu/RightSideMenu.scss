@@ -1,0 +1,8 @@
+.right-side-menu {
+  position: fixed;
+  width: 260px;
+
+  & > * {
+    margin-top: 25px;
+  }
+}

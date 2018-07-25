@@ -1,0 +1,27 @@
+.vertical-card {
+  width: 110px;
+  text-align: center;
+}
+
+.vertical-card__image {
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #f0f1f4 url('/images/camera.svg') center / 25px no-repeat;
+}
+
+.with-icon {
+  background-size: cover;
+  background-position: center;
+}
+
+.vertical-card__title {
+  color: #253962;
+  font-size: 14px;
+}
+
+.vertical-card__sub-title {
+  color: #9da6bf;
+  font-size: 12px;
+}

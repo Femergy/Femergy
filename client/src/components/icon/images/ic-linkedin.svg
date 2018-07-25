@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-18958.709 10372.3 23.375 23.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0077b5;
+      }
+
+      .cls-2 {
+        fill: #fffffe;
+      }
+    </style>
+  </defs>
+  <g id="ic-linkedin" transform="translate(-18958.709 10372.3)">
+    <g id="button_copy" data-name="button copy" transform="translate(0 0)">
+      <rect id="button_bg" data-name="button bg" class="cls-1" width="23.375" height="23.4" rx="11.687"/>
+    </g>
+    <g id="Fill_12_Fill_13" data-name="Fill 12 + Fill 13" transform="translate(6.435 5.85)">
+      <path id="Fill_12" data-name="Fill 12" class="cls-2" d="M2.368,10.558H.174V3.505H2.368v7.051Zm-1.1-8.016a1.271,1.271,0,1,1,1.27-1.271A1.273,1.273,0,0,1,1.272,2.542Z" transform="translate(0 0)"/>
+      <path id="Fill_13" data-name="Fill 13" class="cls-2" d="M0,.175H2.1v.964h.03A2.3,2.3,0,0,1,4.205,0C6.424,0,6.834,1.46,6.834,3.359V7.227H4.643V3.8c0-.818-.014-1.87-1.139-1.87-1.14,0-1.314.891-1.314,1.811V7.227H0V.175" transform="translate(3.694 3.284)"/>
+    </g>
+  </g>
+</svg>

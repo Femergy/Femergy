@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #61a8de;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ic_telegram" transform="translate(16069 -11028)">
+    <g id="button_copy" data-name="button copy" transform="translate(-16069 11028)">
+      <rect id="button_bg" data-name="button bg" class="cls-1" width="36" height="36" rx="18"/>
+    </g>
+    <path id="Path_575" data-name="Path 575" class="cls-2" d="M63.858,99.563,47.4,105.979a.6.6,0,0,0,.048,1.135l4.183,1.235,1.561,4.954a.718.718,0,0,0,1.2.287l2.163-2.208,4.244,3.115a.886.886,0,0,0,1.391-.533l2.811-13.438A.847.847,0,0,0,63.858,99.563Zm-2.064,2.982-7.647,6.762a.411.411,0,0,0-.136.262l-.294,2.617a.079.079,0,0,1-.155.015l-1.211-3.9a.411.411,0,0,1,.176-.471l9.03-5.6A.2.2,0,0,1,61.794,102.546Z" transform="translate(-16108.013 10938.496)"/>
+  </g>
+</svg>

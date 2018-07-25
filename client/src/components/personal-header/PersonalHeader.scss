@@ -1,0 +1,88 @@
+.home-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+
+  background-color: #7297FF;
+
+  .home-header__search {
+    margin-right: 24px;
+    opacity: 0;
+  }
+
+  .home-header__messages {
+
+    img {
+      max-height: 15px;
+    }
+  }
+
+  .home-header__notify {
+
+    img {
+      max-height: 15px;
+    }
+  }
+
+  .home-header__image-wrapper {
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+
+    background-color: #F0F1F4;
+    background-image: url(../../../public/images/camera.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .home-header__expand {
+
+    img {
+      max-height: 5px;
+      padding-right: 0;
+    }
+  }
+  .home-header__join {
+    background-color: #44CCB5;
+    box-shadow: 0 3px 8px 0 #5377DB;
+    padding: 7px 26px;
+    margin-right: 10px;
+  }
+
+  .home-header__wallet {
+    font-size: 14px;
+    width: 100px;
+
+    img {
+      max-height: 15px;
+    }
+  }
+
+  .home-header__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .home-header__group {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

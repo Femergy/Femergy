@@ -1,0 +1,32 @@
+.page-content-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  margin-left: 250px;
+  max-width: 1050px;
+  min-height: 75vh;
+  padding-right: 450px;
+
+  background-image: url(/images/coming-soon.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 350px;
+
+  .page-content-placeholder__title {
+    margin-bottom: 30px;
+
+    font-size: 74px;
+    color: #253962;
+  }
+}
+
+.page-content-placeholder__text {
+  font-size: 16px;
+  color: #7D869A;
+}
+
+.page-content-placeholder__text p {
+  margin-bottom: 10px;
+}

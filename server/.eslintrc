@@ -1,0 +1,37 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-use-before-define": "off",
+    "object-shorthand":"off",
+    "prefer-const":"off",
+    "no-unused-vars":"warn",
+    "consistent-return":"off",
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "user",
+          "currentUser"
+        ]
+      }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id"
+        ]
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "comma-dangle":"off",
+    "linebreak-style": "off",
+    "arrow-body-style": "off"
+  }
+}

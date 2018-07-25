@@ -1,0 +1,80 @@
+.group-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 130px;
+  padding: 13px 18px;
+  border-radius: 10px;
+  background-color: #F8F9FF;
+
+  .group-card__image-wrapper {
+    width: 37px;
+    height: 37px;
+    margin-bottom: 11px;
+    border-radius: 50%;
+
+    background-color: #F0F1F4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    background-image: url(../../../public/images/camera.svg);
+
+    .group-card__image {
+      max-width: 100%;
+    }
+
+    .group-card__is-verified {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 11px;
+      background-image: url(../../../public/images/ic-check.svg);
+    }
+  }
+
+  .group-card__with-icon {
+    background-image: none;
+  }
+
+  .group-card__title {
+    font-size: 13px;
+    color: #253962;
+    text-align: center;
+  }
+
+  .group-card__sub-title {
+    margin-bottom: 9px;
+    font-size: 11px;
+    color: #9DA6BF;
+  }
+
+  .group-card__description {
+    margin-bottom: 9px;
+    font-size: 10px;
+    color: #253962;
+    text-align: center;
+  }
+
+  .group-card__btn-wrapper {
+    width: 100%;
+    text-align: center;
+
+    .group-card__btn {
+      padding: 7px 13px;
+      border-radius: 20px;
+      border: 1px solid #44CCB5;
+
+      font-size: 11px;
+      color: #44CCB5;
+
+      cursor: pointer;
+    }
+
+    .group-card__btn-disabled {
+      border: 1px solid #aaa;
+      color: #aaa;
+    }
+  }
+}

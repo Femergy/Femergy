@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-18299 9886 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #44ccb5;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #44ccb5;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="ic-plus" transform="translate(-19480 9764)">
+    <path id="ic_add_24px" class="cls-1" d="M13.659,9.948H9.948v3.711H8.711V9.948H5V8.711H8.711V5H9.948V8.711h3.711Z" transform="translate(1186.67 128)"/>
+    <g id="Rectangle_22" data-name="Rectangle 22" class="cls-2" transform="translate(1181 122)">
+      <rect class="cls-3" width="30" height="30" rx="15"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="29" height="29" rx="14.5"/>
+    </g>
+  </g>
+</svg>

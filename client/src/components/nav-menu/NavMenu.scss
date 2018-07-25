@@ -1,0 +1,66 @@
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 20px 35px 20px 0;
+  border-radius: 10px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 8px 0 #E1E3ED;
+
+  .home-menu-bg {
+    background-image: url(../../../public/images/ic-home.svg);
+  }
+
+  .groups-menu-bg {
+    background-image: url(../../../public/images/ic-groups.svg);
+  }
+
+  .feed-menu-bg {
+    background-image: url(../../../public/images/ic-feed.svg);
+  }
+
+  .learn-menu-bg {
+    background-image: url(../../../public/images/ic-learn.svg);
+  }
+
+  .accelerator-menu-bg {
+    background-image: url(../../../public/images/ic-accelerator.svg);
+  }
+
+  .tools-menu-bg {
+    background-image: url(../../../public/images/ic-settings.svg);
+  }
+
+  .congress-menu-bg {
+    background-image: url(../../../public/images/ic-congress.svg);
+  }
+
+  .earn-menu-bg {
+    background-image: url(../../../public/images/ic-earn.svg);
+  }
+
+  .nav-menu__item {
+    padding: 9px 0 9px 70px;
+    border-left: 2px solid #FFFFFF;
+
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 35px center;
+
+    color: #253962;
+    font-size: 14px;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:hover {
+      border-left: 2px solid #44CCB5;
+    }
+  }
+
+  .nav-menu__item--active {
+    border-left: 2px solid #44CCB5;
+  }
+}

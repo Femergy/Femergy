@@ -1,0 +1,52 @@
+.auth-form__input--wrapper {
+  position: relative;
+  display: flex;
+
+  .auth-form__not-valid {
+    position: absolute;
+    bottom: 5px;
+    color: #FF5050;
+    font-size: 13px;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    max-height: 14px;
+    max-width: 30px;
+    cursor: pointer;
+  }
+
+  .auth-form__input,
+  .auth-form__input-pass {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #D2D8EA;
+    padding: 15px 0;
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    &::placeholder,
+    &::placeholder {
+      color: #D2D8EA;
+      opacity: 1;
+    }
+
+    &::-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      color: #D2D8EA;
+    }
+
+    &:-ms-input-placeholder,
+    &:-ms-input-placeholder {
+      color: #D2D8EA;
+    }
+
+    &:focus,
+    &:focus {
+      outline: none;
+    }
+  }
+}

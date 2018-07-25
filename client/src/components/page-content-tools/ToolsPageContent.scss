@@ -1,0 +1,25 @@
+.tools {
+  width: 600px;
+  margin: 25px 80px 0 0;
+
+  & > * {
+    margin-bottom: 30px;
+  }
+
+  .tools__title {
+    font-size: 31px;
+    color: #7297FF;
+  }
+
+  .tools__welcome-text {
+    font-size: 16px;
+    color: #7D869A;
+  }
+
+  .tools__list {
+  
+    & > * {
+      margin-bottom: 30px;
+    }
+  }
+}

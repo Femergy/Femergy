@@ -1,0 +1,72 @@
+.mobile-stub__header {
+  padding: 15px 0 10px;
+  background-color: #7297ff;
+  text-align: center;
+}
+
+.mobile-stub {
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/images/coming-soon.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center 200px;
+}
+
+.mobile-stub__body {
+  padding-bottom: 100px;
+
+  & > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #253962;
+  }
+
+  & > p {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #7d869a;
+  }
+}
+
+@media (max-width: 760px) {
+  .mobile-stub {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    display: flex;
+    background-color: #f0f1fc;
+  }
+}
+
+@media (max-width: 760px) and (orientation: portrait) {
+  .mobile-stub {
+    background-size: 70%;
+    background-position: center 200px;
+  }
+}
+
+@media (max-width: 760px) and (orientation: landscape) {
+  .mobile-stub {
+    background-size: 30%;
+    background-position: 50px 70%;
+  }
+
+  .mobile-stub__body {
+    padding-left: 200px;
+  }
+}
+
+@media (min-width: 761px) {
+  .mobile-stub {
+    display: none;
+  }
+}

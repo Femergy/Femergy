@@ -1,0 +1,97 @@
+.auth-form--wrapper {
+  width: 536px;
+  height: 600px;
+  padding: 60px;
+  border-radius: 10px;
+
+  box-shadow: 0 3px 20px 0 rgba(180, 200, 255, 0.5);
+  background-color: #FFFFFF;
+
+  .auth-form--wrapper__forgot-form {
+    .auth-form__input--wrapper {
+      margin-bottom: 35px;
+    }
+  }
+
+  .auth-form {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c2e7FF;
+
+    .auth-form__forgot {
+      text-align: right;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    
+    .auth-form__forgot--link {
+      text-align: right;
+      font-size: 12px;
+      color: #7297FF;
+
+      &:hover {
+        color: #FF9772;
+        cursor: pointer;
+      }
+    }
+    
+    .auth-form__btn--wrapper {
+      display: flex;
+      align-items: center;
+
+      & p {
+        font-size: 13px;
+        margin-left: 15px;
+      }
+    }
+    
+    .auth-form__to-signup {
+      text-decoration: underline;
+      font-size: 12px;
+      color: #7297FF;
+
+      &:hover {
+        color: #FF9772;
+        cursor: pointer;
+      }    
+    }
+  }
+
+  .auth-form__forgot-pre-title {
+    margin-bottom: 20px;
+
+    color: #253962;
+    font-size: 14px;
+  }
+
+  .auth-form__pre-title {
+    font-size: 16px;
+    font-family: 'SFDregular', Arial, Helvetica, sans-serif;
+    color: #253962;
+  }
+
+  .auth-form__title {
+    margin-bottom: 30px;
+  
+    font-size: 44px;
+    font-family: 'SFDregular', Arial, Helvetica, sans-serif;
+    color: #253962;
+  }
+  
+  .auth-form__social--wrapper {
+    padding: 25px 0 0;
+
+    .auth-form__social-title {
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: #7297FF;
+    }
+    
+    .auth-form__social-list {
+      display: flex;
+    }
+  }
+}
+
+
+
+

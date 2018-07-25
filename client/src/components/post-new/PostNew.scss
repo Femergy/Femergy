@@ -1,0 +1,71 @@
+.post-new {
+  position: relative;
+
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+
+  box-shadow: 0 3px 6px 0 #E1E3ED;
+
+  .post-new__textbox {
+    border: 1px solid #E7E9F8;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 30px 15px 15px;
+    margin-bottom: 16px;
+    resize: none;
+
+    background-color: #FCFCFF;
+    
+
+    font-size: 12px;
+  }
+
+  .post-new__smile {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    width: 15px;
+    height: 15px;
+    background-image: url(../../../public/images/face.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+
+  .post-new__controls--wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .post-new__post-types {
+      display: flex;
+      justify-content: space-between;
+      width: 90px;
+      opacity: 0;
+
+      button {
+        padding: 2px 6px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .post-new__post--btn {
+      padding: 7px 35px;
+      border-radius: 20px;
+  
+      background-color: #7297FF;
+      box-shadow: 0 2px 6px 0 #7297FF;
+  
+      font-size: 14px;
+      color: #FFFFFF;
+
+      cursor: pointer;
+    }
+  }
+}

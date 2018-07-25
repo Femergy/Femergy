@@ -1,0 +1,19 @@
+.borderless-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  border: none;
+
+  background-color: transparent;
+
+  font-family: 'SFDmedium', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+
+  cursor: pointer;
+
+  img {
+    padding-right: 5px;
+  }
+}

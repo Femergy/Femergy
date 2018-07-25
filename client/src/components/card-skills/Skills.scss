@@ -1,0 +1,76 @@
+.skills {
+
+  .skills__btn--wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .skills__title {
+    margin-bottom: 17px;
+
+    font-weight: normal;
+    color: #9DA6BF;
+    font-size: 14px;
+  }
+
+  .skills__list {
+    border-radius: 10px;
+    padding: 12px 40px 34px;
+    background-color: #fff;
+    box-shadow: 0 3px 8px 0 #E1E3ED;
+
+    .skills__skills-list {
+      margin-top: 24px;
+
+      & > button {
+        margin-bottom: 15px;
+        margin-right: 18px;
+      }
+
+      .skills__skill-point {
+        padding: 8px 20px 8px 20px;
+        border-radius: 20px;
+  
+        background-color: #D2D8EA;
+  
+        color: #FFFFFF;
+  
+        &:hover {
+          padding: 8px 36px 8px 20px;
+  
+          background-color: #7297FF;
+          background-image: url(../../../public/images/close-white.svg);
+          background-repeat: no-repeat;
+          background-position: 90% center;
+          background-size: 7px;
+        }
+      }
+    }
+
+    .skills__input {
+      padding: 8px 16px;
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #F1F3F9;
+
+      background-image: url(../../../public/images/expand.svg);
+      background-repeat: no-repeat;
+      background-size: 9px;
+      background-position: 96% center;
+
+      &::placeholder {
+        color: #D2D8EA;
+        opacity: 1;
+      }
+      
+      &:-ms-input-placeholder {
+        color: #D2D8EA;
+      }
+      
+      &::-ms-input-placeholder {
+        color: #D2D8EA;
+      }
+    }
+  }
+
+}

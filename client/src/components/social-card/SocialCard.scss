@@ -1,0 +1,35 @@
+.social-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 20px 27px;
+  border-radius: 10px;
+  background-color: #F8F9FF;
+
+  box-shadow: 0 3px 6px 0 #E1E3ED;
+
+  .social-btn-style {
+    font-size: 11px;
+    padding: 5px 12px;
+  };
+
+  .social-card__title {
+    color: #253962;
+    font-size: 12px;
+    margin-bottom: 16px
+  }
+
+  .social-card__followers {
+    color: #9DA6BF;
+    font-size: 12px;
+    margin-bottom: 16px
+  }
+
+  .social-card__image {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+}

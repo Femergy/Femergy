@@ -1,0 +1,39 @@
+.experience {
+
+  .experience__btn--wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .experience__title {
+    margin-bottom: 17px;
+
+    font-weight: normal;
+    color: #9DA6BF;
+    font-size: 14px;
+  }
+
+  .experience__list {
+    border-radius: 10px;
+    padding: 12px 40px 34px;
+    background-color: #fff;
+    box-shadow: 0 3px 8px 0 #E1E3ED;
+  
+    .experience__is-current-label {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      padding-top: 18px;
+      padding-left: 12px;
+
+      font-size: 14px;
+      color: #2A3D65;
+
+      p {
+        padding: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+}

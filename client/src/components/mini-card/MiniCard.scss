@@ -1,0 +1,91 @@
+.mini-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  width: 230px;
+
+  .mini-card__info-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    .mini-card__image {
+      border-radius: 50%;
+      margin-right: 16px;
+      overflow: hidden;
+
+      background: url('/images/camera.svg');
+      background-color: #F0F1F4;
+      background-position: center;
+      background-size: 18px;
+      background-repeat: no-repeat;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .mini-card__image-small {
+      width: 30px;
+      height: 30px;
+    }
+
+    .mini-card__image-medium {
+      width: 40px;
+      height: 40px;
+    }
+
+    .mini-card__image-big {
+      width: 60px;
+      height: 60px;
+    }
+
+    .mini-card__with-icon {
+      background-image: none;
+    }
+  }
+
+  .mini-card__click-btn {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    .mini-card__plus-img {
+      width: 30px;
+    }
+
+    .mini-card__setting-img {
+      width: 20px;
+    }
+  }
+
+  .mini-card__info {
+    width: auto;
+  }
+
+  .mini-card__info__title {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #253962;
+  }
+
+  .mini-card__info__sub-title {
+    font-size: 12px;
+    color: #9DA6BF;
+  }
+
+  .mini-card__info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.is-verified {
+  background-image: url(../../../public/images/ic-check.svg);
+  background-repeat: no-repeat;
+  background-position: 96% center;
+  background-size: 12px;
+}

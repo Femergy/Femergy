@@ -1,0 +1,22 @@
+.recommended-groups {
+  padding: 15px;
+}
+
+.recommended-groups__title {
+  margin-bottom: 17px;
+
+  font-weight: normal;
+  color: #9DA6BF;
+  font-size: 14px;
+}
+
+.recommended-groups__list {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px 0 #E1E3ED;
+}
+
+.recommended-groups__list > *:not(:last-child) {
+  margin-bottom: 15px;
+}

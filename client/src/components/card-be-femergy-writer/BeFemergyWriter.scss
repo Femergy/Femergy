@@ -1,0 +1,48 @@
+.be-femergy-writer__text-wrapper {
+  background-image: url(../../../public/images/Writer.svg);
+  background-repeat: no-repeat;
+  background-size: 78px;
+  background-position: 20px 5px;
+  padding-left: 130px;
+
+  .be-femergy-writer__title {
+    padding-top: 10px;
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    color: #253962;
+
+    span {
+      color: #7297FF;
+    }
+  }
+}
+
+.be-femergy-writer__form {
+  flex-direction: column;
+  margin-top: 15px;
+
+  p {
+    padding: 0;
+  }
+
+  .be-femergy-writer__form-field {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+}
+
+.be-femergy-writer__text {
+  font-size: 12px;
+  color: #7D869A;
+}
+
+.be-femergy-writer__btn-wrapper {
+  text-align: right;
+
+  .be-femergy-writer__submit-btn {
+    font-size: 14px;
+    background-color: #7297FF;
+    box-shadow: 0 2px 6px 0 #7297FF;
+  }
+}

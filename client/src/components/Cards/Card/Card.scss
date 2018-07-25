@@ -1,0 +1,11 @@
+.card {
+  padding: 30px 40px 40px;
+  border-radius: 10px;
+
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 #E1E3ED;
+}
+
+.card > *:not(:last-child) {
+  margin-bottom: 15px;
+}

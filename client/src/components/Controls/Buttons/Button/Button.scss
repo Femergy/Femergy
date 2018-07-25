@@ -1,0 +1,52 @@
+$default-color: #ffffff;
+$default-bg-color: transparent;
+$success-color: #44ccb5;
+$fail-color: #ff5577;
+$regular-color: #7297ff;
+$disabled-color: #aaaaaa;
+
+.button-btn {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 35px;
+  background-color: $default-bg-color;
+  font-size: 14px;
+  color: $default-color;
+  cursor: pointer;
+}
+
+.button-success-btn {
+  background-color: $success-color;
+}
+
+.button-fail-btn {
+  background-color: $fail-color;
+}
+
+.button-disabled-btn {
+  background-color: $disabled-color;
+}
+
+.button-regular-btn {
+  background-color: $regular-color;
+}
+
+.button-success-outlined-btn {
+  color: $success-color;
+  border: 1px solid $success-color;
+}
+
+.button-fail-outlined-btn {
+  color: $fail-color;
+  border: 1px solid $fail-color;
+}
+
+.button-disabled-outlined-btn {
+  color: $disabled-color;
+  border: 1px solid $disabled-color;
+}
+
+.button-regular-outlined-btn {
+  border: 1px solid $regular-color;
+  color: $regular-color;
+}

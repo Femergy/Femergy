@@ -1,0 +1,16 @@
+.main-header__logo-link {
+  text-decoration: none;
+  color: #253962;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .main-header__logo-img {
+    width: 180px;
+
+    &--big {
+      width: 340px;
+    }
+  }
+}

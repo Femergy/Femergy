@@ -1,0 +1,18 @@
+.referal-link-card {
+  padding: 15px 15px 25px;
+  border-radius: 10px;
+
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 #E1E3ED;
+
+  .referal-link-card__social-wrapper {
+    display: flex;
+  }
+
+  .referal-link-card__title {
+    margin-bottom: 20px;
+
+    color: #253962;
+    font-size: 14px;
+  }
+}

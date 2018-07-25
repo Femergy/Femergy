@@ -1,0 +1,46 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+
+  width: 50%;
+
+  font-size: 14px;
+  color: #2A3D65;
+
+  p {
+    padding: 18px 16px 12px;
+  }
+
+  .form-field__input,
+  .form-field__date-input {
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #F1F3F9;
+  
+    &::placeholder {
+      color: #D2D8EA;
+      opacity: 1;
+    }
+    
+    &:-ms-input-placeholder {
+      color: #D2D8EA;
+    }
+    
+    &::-ms-input-placeholder {
+      color: #D2D8EA;
+    }
+  }
+  
+  .form-field__date-input {
+    background-image: url(../../../../public/images/date_range.svg);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 96% center;
+  }
+
+  .form-field__not-valid {
+    border-color: red;
+  }
+}
