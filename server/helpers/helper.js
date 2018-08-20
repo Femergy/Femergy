@@ -10,6 +10,13 @@ module.exports = {
   getRandomString,
   getSkipLimit,
   getPriceSumDecimal,
+  fileIsNotValid
+};
+
+function fileIsNotValid(msg) {
+  const err = new Error(msg || ERRORS.ALREADY_EXISTS);
+  err.status = 400;
+  throw err;
 }
 
 function errorBadRequest(msg) {

@@ -1,5 +1,6 @@
-const userService = require('./user.service')
-const { MESSAGES, POPULATE } = require('../../config/constants')
+const userService = require('./user.service');
+const { MESSAGES, POPULATE } = require('../../config/constants');
+const removeExtracted = require('../../helpers/remove-extracted');
 
 module.exports = {
   getUser,
@@ -8,8 +9,34 @@ module.exports = {
   updateCurrentUser,
   changeCurrentUserPassword,
   updateCurrentUserPhoto,
-  getBonuses
+  getBonuses,
+  getContacts,
+  sendInvitation
 };
+
+ function sendInvitation(req, res, next) {
+   return userService.preparingMailForContacts({userId : req.user._id, contacts: req.body.data, host: req.headers.host ,protocol: req.headers.protocol})
+     .then(() => {
+       res.json({success: true})
+     })
+     .catch(err => {
+         next(err)
+     });
+ }
+
+ function getContacts(req, res, next) {
+   const acceptedFiles  = req.file;
+   const { _id } = req.user;
+   return userService.getContacts({_id, acceptedFiles})
+     .then(data => {
+       removeExtracted(_id);
+       res.json({success: true, data});
+     })
+     .catch(err => {
+         removeExtracted(_id);
+         next(err)});
+ }
+
 
 function getUser(req, res, next) {
   return userService.getUser(req.query.userId)

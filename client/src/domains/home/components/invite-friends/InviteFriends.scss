@@ -1,0 +1,71 @@
+.invite-friends__text--wrapper {
+  padding: 20px 0 20px 150px;
+
+  background-image: url(../../../../../public/images/ic-invite.svg);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: left center;
+
+  .invite-friends__title {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    color: #253962;
+
+    span {
+      color: #7297FF;
+    }
+  }
+
+  .invite-friend__link {
+    text-decoration: none;
+    button {
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+  .invite-friends__mini-title {
+    font-size: 18px;
+  }
+
+  .invite-friends__text {
+    font-size: 12px;
+    color: #7D869A;
+  }
+}
+
+.invite-friends__mini-icon {
+  background-size: 70px;
+  background-position: 20px center;
+}
+
+.invite-friends__btns--wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 30px;
+}
+
+.google-btn-style {
+  padding: 12px 35px;
+  width: 250px;
+  font-size: 14px;
+  background-color: #DC4E41;
+  border-radius: 20px;
+
+  img {
+    height: 14px;
+  }
+}
+
+.in-btn-style {
+  padding: 12px 35px;
+  width: 280px;
+  background-color: #0077B5;
+  border-radius: 20px;
+  font-size: 14px;
+
+  img {
+    height: 14px;
+  }
+}

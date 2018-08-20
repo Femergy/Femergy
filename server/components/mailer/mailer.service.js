@@ -1,8 +1,6 @@
-const nodemailer = require('nodemailer')
-const debug = require('debug')('femergy:mailer')
-const config = require('../../config/config')
-const host = config.host
-const transporter = nodemailer.createTransport(config.mailer.transport)
+const sgMail = require('@sendgrid/mail');
+const config = require('../../config/config');
+const host = config.host;
 
 module.exports = {
   sendMail,
@@ -10,14 +8,23 @@ module.exports = {
   onRegistration,
   onForgotPassword,
   onAfterRegistration,
-}
+  sendInvitation
+};
 
 function sendMail(options) {
-  transporter.sendMail(options, (error, info) => {
-    if (error) { debug(error); console.log(error); return }
-    console.log(options.to, options.from);
-    debug('Sent email. Info: %s', info)
-  })
+  sgMail.setApiKey(config.mailer.SENDGRID_API_KEY);
+  sgMail.send(options);
+}
+
+function sendInvitation({userId, userEmail, contactEmail, host, protocol='https' }) {
+  const mailOptions = {
+    to: contactEmail,
+    from: userEmail,
+    subject: 'Invitation for registration on Femergy',
+    html: `Hi this is invite for you <br>
+            referal link: ${protocol}://${host}/auth/${userId}\n <br>`,
+  };
+  sendMail(mailOptions)
 }
 
 function notificationToAdmin (email) {

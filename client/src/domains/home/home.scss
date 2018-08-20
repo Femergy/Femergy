@@ -1,0 +1,99 @@
+.home__title {
+  margin-bottom: 17px;
+
+  font-size: 31px;
+  color: #7297FF;
+}
+
+.home__welcome-text {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  color: #7D869A;
+}
+
+.page-front__content {
+
+  .invite-members {
+    width: 597px;
+    height: auto;
+    box-shadow: 0 3px 6px #e1e3ed;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 13px;
+
+    .search-wrapper {
+      input {
+        padding-left: 10px;
+      }
+    }
+
+    .all-contacts {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      padding: 0 10px;
+
+      span{
+        width: 69px;
+        height: 14px;
+        color: #9da6bf;
+        font-family: "SF Pro Display";
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+
+    .invite-link {
+      color: #4acdb7;
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    .contacts {
+      width: 100%;
+      overflow-y: auto;
+      max-height: 430px;
+
+      .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #f7f8fb;
+        border-bottom: 1px solid #f7f8fb;
+        padding: 10px;
+        .avatar {
+          display: flex;
+          align-items: center;
+          border: 2px solid #9da6bf;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          span {
+            display: block;
+            width: 100%;
+            color: #9da6bf;
+            margin: auto;
+            text-align: center;
+            height: 20px;
+            font-size: 18px;
+          }
+        }
+        span {
+          width: 30%;
+        }
+        .name {
+          color: #253962;
+        }
+        .email {
+          color: #9da6bf;
+        }
+      }
+    }
+  }
+}

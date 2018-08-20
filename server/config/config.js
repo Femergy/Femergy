@@ -59,13 +59,8 @@ config.administration = {
 };
 
 config.mailer = {
-  transport: {
-    service: 'SendGrid',
-    auth: {
-      user: 'evilHoms',
-      pass: 'Garik1905',
-    },
-  },
+  SENDGRID_API_KEY: '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',
+
   defaultFromAddress: 'Femergy <info@femergy.com>',
 };
 

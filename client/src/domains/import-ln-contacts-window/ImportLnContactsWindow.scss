@@ -1,0 +1,242 @@
+.import-lb-contacts-window {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10px;
+
+  background-color: #191553;
+
+  .validDropZone {
+    border: 1px dashed blue !important;
+  }
+
+  .invalidDropZone {
+    border: 1px dashed red !important;
+  }
+
+  .isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  .import-lb-contacts-window__image {
+    width: 160px;
+    margin-bottom: 45px;
+  }
+
+  .import-lb-contacts-window__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1100px;
+    margin: 0 auto;
+    padding: 65px 80px;
+    border-radius: 10px;
+
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 #E1E3ED;
+
+    .import-lb-contacts-window__title {
+      margin-bottom: 40px;
+
+      font-size: 24px;
+      color: #253962;
+    }
+
+    .import-lb-contacts-window__sub-title {
+      width: 556px;
+      margin-bottom: 20px;
+      text-align: center;
+
+      font-size: 12px;
+      color: #7D869A;
+    }
+
+    .import-lb-contacts-window__body {
+      display: flex;
+      justify-content: space-between;
+
+      width: 100%;
+      margin-bottom: 60px;
+
+      .import-lb-contacts-window__upload--wrapper {
+        width: 45%;
+
+        & > div {
+          margin-bottom: 40px;
+        }
+
+        .import-lb-contacts-window__upload-text {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-left: 65px;
+          margin-bottom: 30px;
+          min-height: 33px;
+          color: #253962;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .import-lb-contacts-window__upload-text::before {
+          position: absolute;
+          left: -65px;
+          top: 0;
+          content: "";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 33px;
+          height: 33px;
+          border-radius: 50%;
+          background-color: #44CCB5;
+          color: #FFFFFF;
+          font-size: 18px;
+        }
+
+        .import-lb-contacts-window__upload-text:nth-child(1)::before {
+          content: "1";
+        }
+
+        .import-lb-contacts-window__upload-text:nth-child(2)::before {
+          content: "2";
+        } 
+
+        .import-lb-contacts-window__upload-text:nth-child(2)::after {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          content: "Choose Everything & click Request archive";
+          font-size: 14px;
+          color: #81899D;
+          font-weight: normal;
+        } 
+
+        .import-lb-contacts-window__upload-text:nth-child(3)::before {
+          content: "3";
+        }
+      }
+
+      .import-lb-contacts-window__using-personal-info--wrapper {
+        width: 55%;
+
+        .import-lb-contacts-window__using-personal-info__title {
+          border-bottom: 2px solid #7297FF;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+
+          font-size: 18px;
+          font-weight: normal;
+        }
+
+        h4 {
+          margin-bottom: 5px;
+          font-size: 12px;
+        }
+
+        p {
+          max-width: 400px;
+          margin-bottom: 5px;
+          font-size: 12px;
+        }
+
+        .import-lb-contacts-window__using-personal-info__form--wrapper {
+          padding-left: 20px;
+          font-size: 10px;
+
+          & > p {
+            margin-bottom: 10px;
+          }
+
+          .radio--wrapper {
+            display: flex;
+            margin-bottom: 5px;
+
+            input {
+              margin-right: 5px;
+            }
+          }
+
+          .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            border: 0;
+            padding-left: 30px;
+            padding-top: 20px;
+            width: 100%;
+
+            & > div {
+              display: flex;
+              align-items: center;
+              padding-bottom: 15px;
+              width: 50%;
+            }
+
+            input {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .import-lb-contacts-window__btns--wrapper {
+      display: flex;
+
+      .import-lb-contacts-window__cansel-btn {
+        padding: 9px 55px;
+
+        font-size: 14px;
+        color: #253962;
+
+        cursor: pointer;
+      }
+
+      .import-lb-contacts-window__save-btn {
+        padding: 9px 55px;
+        border-radius: 20px;
+
+        background-color: #7297FF;
+        box-shadow: 0 2px 6px 0 #7297FF;
+        text-decoration: none;
+
+        font-size: 14px;
+        color: #FFFFFF;
+
+        cursor: pointer;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+
+      width: 14px;
+      height: 14px;
+
+      background-image: url(../../../public/images/close.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      cursor: pointer;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .marked {
+    color: #7297FF;
+  }
+
+  .marked-underlined {
+    color: #7297FF;
+    text-decoration: underline;
+  }
+}

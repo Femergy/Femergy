@@ -33,6 +33,11 @@ const initialState = {
     current: constants.AUTH_PAGE,
     stage: constants.SIGN_IN,
   },
+  importedContacts: {
+    zipFile: null,
+    isValidFile: null,
+    contacts: []
+  },
   isValidPasswords: true
 };
 
@@ -68,8 +73,9 @@ const rootReducer = (state = initialState, action) => {
       newState.page.stage = constants.SIGN_IN;
       break;
     case constants.UPDATE_USER:
-      storageHelper.updateUser(action.user);
       newState.user = action.user;
+      newState.user.id = action.user._id;
+      storageHelper.updateUser(newState.user);
       break;
     case constants.SET_REFERER:
       storageHelper.referer = action.referer;
@@ -83,6 +89,18 @@ const rootReducer = (state = initialState, action) => {
         newState.user.isNewUser = false;
         storageHelper.removeReferer();
       });
+      break;
+    case constants.SET_ZIP_FILE:
+      newState.importedContacts.zipFile = action.payload.file;
+      newState.importedContacts.isValidFile = action.payload.isValidZone;
+      break;
+    case constants.SET_CONTACTS:
+      newState.importedContacts.contacts = action.contacts.data;
+      newState.importedContacts.zipFile = null;
+      newState.importedContacts.isValidFile = null;
+      break;
+    case constants.UPDATE_CONTACTS:
+      newState.importedContacts.contacts = action.contacts;
       break;
     default:
       break;

@@ -18,7 +18,7 @@ function getPost(postId) {
 }
 
 async function getAuthorAndAdminPosts(userId) {
-  return Post.find({ $or:[ {authorId :userId}, {role: 'admin'}] })
+  return Post.find({ $or: [{ authorId : userId }, { role: 'admin' }] })
     .then(postList => postList.reverse() || helper.errorNotFound(ERRORS.NOT_FOUND));
 }
 

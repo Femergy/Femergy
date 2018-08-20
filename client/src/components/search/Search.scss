@@ -13,18 +13,15 @@
   background-repeat: no-repeat;
   background-position: 96% center;
 
-    &::placeholder,
     &::placeholder {
       color: #D2D8EA;
       opacity: 1;
     }
 
-    &::-ms-input-placeholder,
     &::-ms-input-placeholder {
       color: #D2D8EA;
     }
 
-    &:-ms-input-placeholder,
     &:-ms-input-placeholder {
       color: #D2D8EA;
     }

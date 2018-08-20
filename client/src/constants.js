@@ -10,7 +10,9 @@ export const constants = {
   SIGN_UP: 'signup',
   SET_REFERER: 'set-referer',
   SET_AS_REFERAL: 'set-as-referal',
-
+  SET_ZIP_FILE: 'SET_ZIP_FILE',
+  SET_CONTACTS: 'SET_CONTACTS',
+  UPDATE_CONTACTS: 'UPDATE_CONTACTS',
   HOME: 'home',
   FEED: 'feed',
   PROFILE: 'profile',

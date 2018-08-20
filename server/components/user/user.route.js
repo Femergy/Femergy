@@ -116,6 +116,7 @@ module.exports = {
      */
     method: 'PUT',
     path: '/photo',
+    upload: 'photo',
     auth: ROLES.ANY,
     handler: userCtrl.updateCurrentUserPhoto,
   },
@@ -174,4 +175,44 @@ module.exports = {
     },
     handler: userCtrl.getBonuses,
   },
+  getContacts: {
+    /**
+     * @api {post} /api/user/contacts Receive user referals bonuses
+     * @apiVersion 1.0.0
+     * @apiName PostBonuses
+     * @apiGroup User
+     * @apiPermission user
+     *
+     *
+     *
+     * @apiUse ExampleErrorTokenExpired
+     * @apiUse ExampleErrorPermissions
+     *
+     */
+    method: 'POST',
+    path: '/contacts',
+    upload: 'zip',
+    auth: ROLES.ANY,
+    handler: userCtrl.getContacts,
+  },
+  sendContactsInvitation: {
+    /**
+     * @api {post} /api/user/invitation Receive user referals bonuses
+     * @apiVersion 1.0.0
+     * @apiName PostBonuses
+     * @apiGroup User
+     * @apiPermission user
+     *
+     *
+     *
+     * @apiUse ExampleErrorTokenExpired
+     * @apiUse ExampleErrorPermissions
+     *
+     */
+    method: 'POST',
+    path: '/invitation',
+    auth: ROLES.ANY,
+    handler: userCtrl.sendInvitation,
+  },
+
 };

@@ -1,25 +1,78 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const helper = require('../../helpers/helper')
-const User = require('./user.model')
+const _ = require('lodash');
+const mailer = require('../mailer/mailer.service');
+const Promise = require('bluebird');
+const helper = require('../../helpers/helper');
+const User = require('./user.model');
 const path = require('path');
-const fs = require('fs');
-const { POPULATE, EXCLUDE, ERRORS } = require('../../config/constants')
+const fs = require('fs-extra');
+const csvToJson = require('convert-csv-to-json');
+const decompress = require('decompress');
+
+const {POPULATE, EXCLUDE, ERRORS} = require('../../config/constants');
 
 module.exports = {
   getUser,
   getFullUser,
   updateCurrentUser,
   changeCurrentUserPassword,
+  getContacts,
+  preparingMailForContacts
+};
+
+function preparingMailForContacts({userId, contacts, host, protocol}) {
+  return User.findOne({_id: userId})
+    .then((user) => {
+      contacts.forEach((item) => {
+        mailer.sendInvitation({userId, userEmail: user.email, contactEmail: item.EmailAddress, host, protocol});
+      });
+
+    })
+}
+
+function getContacts({_id, acceptedFiles}) {
+  return new Promise((res, rej) => {
+    const userFolder = `./extracted/${_id}`;
+    const connectionsFile = `./extracted/${_id}/Connections.csv`;
+    const zipFile = `./extracted/acceptedFiles-${_id}.zip`;
+
+    if (!acceptedFiles.mimetype) {
+      helper.fileIsNotValid(ERRORS.FILE_IS_NOT_VALID);
+    }
+
+    if (!acceptedFiles.size / 1000 > 500) {
+      helper.fileIsNotValid(ERRORS.FILE_IS_TOO_BIG);
+    }
+
+    if (fs.existsSync(userFolder)) {
+      fs.removeSync(userFolder);
+    }
+
+    fs.mkdirSync(userFolder);
+
+    decompress(zipFile, userFolder)
+      .then(() => {
+        if (fs.existsSync(connectionsFile)) {
+          const connections = csvToJson.fieldDelimiter(',').getJsonFromCsv(connectionsFile);
+          User.find({email: {$in: connections.map(item => item.EmailAddress)}})
+            .then((existUsers) => {
+              const uniqueConnections = connections.filter((item) =>
+                !(existUsers.find(existUser => existUser.email === item.EmailAddress)));
+              res(uniqueConnections);
+            });
+        } else {
+          rej(new Error('Connections.csv doesn`t exist'));
+        }
+      });
+  });
 }
 
 function getUser(userId) {
-  return User.findOne({ _id: userId }).populate(POPULATE.USER).select(EXCLUDE.USER)
+  return User.findOne({_id: userId}).populate(POPULATE.USER).select(EXCLUDE.USER)
     .then(user => user || helper.errorNotFound(ERRORS.NOT_FOUND_USER))
 }
 
 function getFullUser(userId) {
-  return User.findOne({ _id: userId }).populate(POPULATE.USER)
+  return User.findOne({_id: userId}).populate(POPULATE.USER)
     .then(user => user || helper.errorNotFound(ERRORS.NOT_FOUND_USER))
 }
 

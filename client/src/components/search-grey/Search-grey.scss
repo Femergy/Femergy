@@ -1,0 +1,37 @@
+.search-grey {
+  position: relative;
+
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+
+  color: #9da6bf;
+  background-image: url(../../../public/images/searchgray.svg);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 96% center;
+
+    &::placeholder {
+      color: #9da6bf;
+      opacity: 1;
+    }
+
+    &::-ms-input-placeholder {
+      color: #9da6bf;
+    }
+
+    &:-ms-input-placeholder {
+      color: #9da6bf;
+    }
+
+
+}
+
+.search--gray {
+  border: 1px solid #F1F3F9;
+  width: 570px;
+  color: #9DA6BF;
+  background-color: #FFFFFF;
+  background-image: url(../../../public/images/searchgray.svg);
+}

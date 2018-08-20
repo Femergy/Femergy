@@ -5,11 +5,11 @@ const routes = require('./routes');
 const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const upload = require('./config/multer');
 const helmet = require('helmet');
 const config = require('./config/config');
 const passport = require('./config/passport');
 const log4js = require('log4js');
+
 const { log, logErrorProd, logErrorDev } = require('./config/log');
 
 const app = express();
@@ -17,7 +17,6 @@ const app = express();
 app.use(log4js.connectLogger(log, { level: 'auto', format: ':method :url :status :response-time' }));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/xwww-form-urlencoded
-app.use(upload.single('photo'));
 app.use(cookieParser());
 app.use(helmet()); // for additional secure headers
 app.use(session({ secret: 'secret', resave: true, saveUninitialized: true })); // for twitter

@@ -28,23 +28,19 @@
 
     font-size: 16px;
 
-    &::placeholder,
     &::placeholder {
       color: #D2D8EA;
       opacity: 1;
     }
 
-    &::-ms-input-placeholder,
     &::-ms-input-placeholder {
       color: #D2D8EA;
     }
 
-    &:-ms-input-placeholder,
     &:-ms-input-placeholder {
       color: #D2D8EA;
     }
 
-    &:focus,
     &:focus {
       outline: none;
     }

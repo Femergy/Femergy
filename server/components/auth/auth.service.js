@@ -37,7 +37,7 @@ function register(data, ip) {
           return null;
         } else {
           user.referals.push(ip);
-          user.bonuses += 10;
+          user.bonuses += 1;
         }
         user.save();
       });
@@ -157,6 +157,7 @@ function loginSocial(data) {
           [data.provider]: data.id,
           displayName: data.displayName,
           role: ROLES.USER,
+          email: data.emails[0].value
         });
         return registerSocial(user);
       }

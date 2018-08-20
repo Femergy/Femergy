@@ -26,6 +26,31 @@ class RequestHelper {
     }
   }
 
+  sendInvite(invitedFriends, {action, updatedContacts}, onFail) {
+    const { successHandler, failHandler } = this;
+    return axios.post(config.api.sendInvitation, { data: invitedFriends})
+      .then(() => {
+        successHandler(null, { handler: null, msg: 'Invitation was sent' });
+        action(updatedContacts);
+      })
+      .catch((err) => {
+        failHandler(err, { handler: null, msg: 'Invitations send fail' });
+      });
+  }
+
+  getContacts({ file }, onSuccess, onFail) {
+    const { successHandler, failHandler } = this;
+    const formData = new FormData();
+    formData.append("acceptedFiles", file);
+    return axios.post(config.api.getContacts, formData)
+      .then((res) => {
+        successHandler(res.data, { handler: onSuccess, msg: 'contacts' });
+      })
+      .catch((err) => {
+        failHandler(err, { handler: onFail, msg: 'fail' });
+      });
+  }
+
   setAsReferal({ referer, referal }, onSuccess, onFail) {
     const { successHandler, failHandler } = this;
     return axios.post(config.api.setAsReferal, qs.stringify({ referer, referal }))

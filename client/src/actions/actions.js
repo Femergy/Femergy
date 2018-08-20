@@ -12,6 +12,9 @@ export const okState = () => ({type: constants.OK_STATE});
 export const forgotPassword = () => ({type: constants.FORGOT_PASSWORD});
 export const remindSent = () => ({type: constants.REMIND_SENT});
 export const setUser = user => ({type: constants.SET_USER, user});
+export const setFile = payload => ({type: constants.SET_ZIP_FILE, payload});
+export const setContacts = contacts => ({type: constants.SET_CONTACTS, contacts});
+export const updateContacts = contacts => ({type: constants.UPDATE_CONTACTS, contacts});
 export const setBonuses = bonuses => ({type: constants.SET_BONUSES, bonuses});
 export const updateUser = user => ({type: constants.UPDATE_USER, user});
 

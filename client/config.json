@@ -10,6 +10,8 @@
     "updateUser": "/api/user",
     "updateUserPhoto": "/api/user/photo",
     "setAsReferal": "/api/auth/referer",
+    "getContacts": "/api/user/contacts",
+    "sendInvitation": "/api/user/invitation",
     "getBonuses": "api/user/bonuses",
     "verifyEmail": "/api/auth/verify",
     "password": "/api/user/password",

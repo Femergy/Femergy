@@ -1,0 +1,30 @@
+.mentors__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mentors__title {
+  color: #9da6bf;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mentors__btn {
+  padding: 8px 16px;
+}
+
+.mentors__btn:first-child {
+  margin-right: 10px;
+}
+
+.mentors__card {
+  padding: 25px 10px;
+}
+
+.mentors__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

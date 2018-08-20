@@ -8,6 +8,8 @@ const auth = passport.authenticate('jwt', { session: false, failWithError: true 
 const { ERRORS } = require('../config/constants');
 const helper = require('./helper');
 const catcher = fn => (req, res, next) => fn ? fn(req, res, next).catch(next) : next();
+const uploadPhoto = require('../config/multer-images');
+const uploadZip = require('../config/multer-zip');
 
 module.exports = config => {
   const router = require('express').Router(); //should be here, above overwrites routes
@@ -19,10 +21,21 @@ module.exports = config => {
     }
   };
 
+  const fileParser = (uploadFile) => {
+    if (uploadFile === 'photo') {
+      return uploadPhoto.single('photo');
+    }
+    if (uploadFile === 'zip') {
+      return uploadZip.single('acceptedFiles');
+    }
+  };
+
   Map(config, route => {
+
     const authRoute = route.auth;
     let authenticator = null;
     let accessor = null;
+
     if (authRoute) {
       authenticator = auth;
       accessor = (req, res, next) => {
@@ -33,9 +46,8 @@ module.exports = config => {
         next();
       }
     }
-    const args = Compact([route.path, authenticator, accessor, route.files, validator(route.validate), catcher(route.handler), route.handlerSocial]);
+    const args = Compact([route.path, authenticator, accessor, route.files, fileParser(route.upload),validator(route.validate), catcher(route.handler), route.handlerSocial]);
     router[route.method.toLowerCase()](...args);
   });
-
   return router
 };

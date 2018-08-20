@@ -1,7 +1,7 @@
 import React from 'react';
 import './PageContentEarn.scss';
 import TotalBalance from '../card-total-balance/TotalBalance';
-import InviteFriends from '../invite-friends/InviteFriends';
+import InviteFriends from '../../domains/home/components/invite-friends/InviteFriends';
 import SharePersonalLink from '../card-share-personal-link/SharePersonalLink';
 import BeFemergyWriter from '../card-be-femergy-writer/BeFemergyWriter';
 import PageContentWrapper from '../page-content-wrapper/PageContentWrapper';

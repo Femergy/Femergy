@@ -9,6 +9,8 @@ module.exports.ERRORS = {
   INTERNAL_SERVER_ERROR: 'Internal server error',
   NO_PERMISSIONS: 'You do not have permissions',
   NOT_FOUND_USER: 'User not found',
+  FILE_IS_NOT_VALID: 'File is not Valid',
+  FILE_IS_TOO_BIG: 'File is too big',
   NOT_CONFIRM_EMAIL: 'User didn\'t confirm email',
   INVALID_EMAIL: 'Invalid email',
   INVALID_TOKEN: 'Invalid token',
